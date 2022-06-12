@@ -1,5 +1,5 @@
 .modal {
-  margin-top: 40px;
+  margin-top: 140px;
   color: $blue-dark;
   .wrapper {
     padding: 50px 60px;
@@ -8,6 +8,7 @@
     max-width: 720px;
     border-radius: 40px;
     box-shadow: 0 20px 80px 0 rgba(0, 0, 255, 0.4);
+    z-index: 4000;
   }
   &-header {
     font-size: 30px;
@@ -74,6 +75,7 @@
         border: 2px solid $blue-dark;
         border-radius: 10px;
         color: $blue-dark;
+        resize: none;
       }
       .privacy {
         position: relative;

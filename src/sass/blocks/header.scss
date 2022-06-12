@@ -6,8 +6,11 @@
   padding: 20px 0;
   top: 0;
   width: 100%;
-  z-index: 2000;
-  &-link {
+  background-color: $blue-dark;
+  border-radius: 0 0 0 150px;
+  z-index: 1000;
+  cursor: pointer;
+  &-button {
     display: inline-block;
     height: 100%;
     transition: all 0.35s;

@@ -24,10 +24,14 @@ button {
 }
 
 img {
-  pointer-events: none;
+  -webkit-user-select:none;
+  user-select:none;
+  pointer-events:none
 }
 
 @import "./blocks/header.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/services.scss";
 @import "./blocks/marketing.scss";
+@import "./blocks/profits.scss";
+@import "./blocks/proposal.scss";

@@ -1,0 +1,33 @@
+.profits {
+  margin-top: 80px;
+  &-header {
+    text-align: center;
+    font-size: 50px;
+    color: $blue-dark;
+    span {
+      background-image: linear-gradient(0deg,#009eee,#1e01d3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    margin-top: 80px;
+    &-item {
+      &-header {
+        font-size: 20px;
+        background-image: linear-gradient(0deg,#009eee,#1e01d3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &-description {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 1.43;
+      }
+    }
+  }
+}

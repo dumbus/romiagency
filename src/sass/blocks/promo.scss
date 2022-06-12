@@ -1,0 +1,38 @@
+.promo {
+  height: 800px;
+  position: relative;
+  background-color: $blue-dark;
+  border-radius: 0 0 0 150px;
+  &-img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  &-text {
+    width: 50%;
+    max-width: 1240px;
+    padding: 300px 0 0 0;
+    color: #FFF;
+    &-header {
+      font-size: 50px;
+    }
+    &-description {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    &-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 18px 38px;
+      border-radius: 10px;
+      background-image: linear-gradient(0deg,#009eee,#1e01d3);
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: opacity 0.15s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

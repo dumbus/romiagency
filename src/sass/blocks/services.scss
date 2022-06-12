@@ -1,0 +1,46 @@
+.services {
+  color: $blue-dark;
+  &-wrapper {
+    max-width: 1200px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-top: -160px;
+  }
+  &-header {
+    text-align: center;
+    font-size: 30px;
+  }
+  &-table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    column-gap: 40px;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      &-line {
+
+      }
+      &::before {
+        content: '';
+        width: 100%;
+        height: 6px;
+        border-radius: 3px;
+      }
+      &:nth-child(1)::before {
+        background-color: $yellow-light;
+      }
+      &:nth-child(2)::before {
+        background-color: $blue-dark;
+      }
+      &:nth-child(3)::before {
+        background-color: $blue-light;
+      }
+      &:nth-child(4)::before {
+        background-color: $green-light;
+      }
+    }
+  }
+}

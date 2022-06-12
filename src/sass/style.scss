@@ -1,0 +1,32 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+}
+
+@import "./blocks/header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/services.scss";

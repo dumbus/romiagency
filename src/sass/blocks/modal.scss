@@ -1,0 +1,118 @@
+.modal {
+  margin-top: 40px;
+  color: $blue-dark;
+  .wrapper {
+    padding: 50px 60px;
+    position: relative;
+    background-color: #fff;
+    max-width: 720px;
+    border-radius: 40px;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 255, 0.4);
+  }
+  &-header {
+    font-size: 30px;
+    text-align: center;
+  }
+  &-subheader {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  &-line {
+    width: 80%;
+    height: 6px;
+    border-radius: 3px;
+    margin: 30px auto 30px;
+    background-image: linear-gradient(0deg,#009eee,#1e01d3);
+  }
+  &-form {
+    &-row {
+      margin-top: 30px;
+      font-size: 20px;
+      h4 {
+        margin-bottom: 10px;
+      }
+      &-checkbox {
+        position: relative;
+        margin-top: 5px;
+        span {
+          padding-left: 25px;
+          user-select: none;
+          cursor: pointer;
+        }
+        input {
+          position: absolute;
+          top: 1px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+      .text-input {
+        border-radius: 10px;
+        border: 2px solid $blue-dark;
+        background-color: #fff;
+        height: 48px;
+        padding: 0 10px;
+        display: block;
+        width: calc(100% - 20px);
+        margin-top: 10px;
+        font-size: 20px;
+        color: $blue-dark;
+      }
+      .textarea {
+        width: calc(100% - 22px);
+        height: 150px;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        font-family: Montserrat,sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        border: 2px solid $blue-dark;
+        border-radius: 10px;
+        color: $blue-dark;
+      }
+      .privacy {
+        position: relative;
+        display: flex;
+        span {
+          padding-left: 25px;
+          user-select: none;
+          cursor: pointer;
+        }
+        input {
+          position: absolute;
+          top: 3px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+      button {
+        display: inline-block;
+        margin: 20px auto 0 auto;
+        padding: 18px 38px;
+        border-radius: 10px;
+        background-image: linear-gradient(0deg,#009eee,#1e01d3);
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: opacity 0.15s;
+        color: #FFF;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        &:disabled {
+          opacity: 0.3;
+          cursor: unset;
+        }
+        &:not(:disabled):hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

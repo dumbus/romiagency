@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <title>Romiagency</title>
+  <title>Romi Agency</title>
 </head>
 <body>
-  <div class="home">
+  <div class="home hidden">
     <header class="header">
       <div class="wrapper">
         <a href="#" class="header-link">
@@ -216,6 +216,119 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer"></footer>
+
+    
+  </div>
+
+  <div class="modal">
+    <div class="wrapper">
+      <h2 class="modal-header">Get your FREE proposal</h2>
+      <h3 class="modal-subheader">
+        Let’s get to know each other a little better by filling out the form below
+      </h3>
+
+      <div class="modal-line"></div>
+
+      <form class="modal-form" action="mailer.php" method="post" id="proposal-form">
+        <div class="modal-form-row">
+          <h4>What services are you interested in?</h4>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whichServiceAreYouInterestedIn" type="checkbox" value="Google Ads">
+              <span>Google Ads</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whichServiceAreYouInterestedIn" type="checkbox" value="Facebook Ads">
+              <span>Facebook Ads</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whichServiceAreYouInterestedIn" type="checkbox" value="Technical SEO">
+              <span>Technical SEO</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whichServiceAreYouInterestedIn" type="checkbox" value="Analytics">
+              <span>Analytics</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-form-row">
+          <h4>Tell us your goals?</h4>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whatIsYourGoal" type="checkbox" value="More leads">
+              <span>More leads</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whatIsYourGoal" type="checkbox" value="More sales">
+              <span>More sales</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whatIsYourGoal" type="checkbox" value="Lower cost per conversion">
+              <span>Lower cost per conversion</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row-checkbox">
+            <label>
+              <input name="whatIsYourGoal" type="checkbox" value="Brand awareness">
+              <span>Brand awareness</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-form-row">
+          <h4>* Your Email address:</h4>
+
+          <input class="text-input" name="email" type="email" placeholder="Enter your Email address" required>
+        </div>
+
+        <div class="modal-form-row">
+          <h4>* Your phone number:</h4>
+
+          <input class="text-input" name="phone" type="text" placeholder="Enter your phone number">
+        </div>
+
+        <div class="modal-form-row">
+          <h4>Please write us any additional comments or notes:</h4>
+
+          <textarea class="textarea" name="comment" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div class="modal-form-row">
+          <label class="privacy">
+            <input type="checkbox" name="privacy" value="false">
+
+            <span>
+              Collected personal information will be used exclusively for preparing and sending proposals.
+            </span>
+          </label>
+        </div>
+
+        <div class="modal-form-row">
+          <button type="submit" disabled>Submit Answers</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>

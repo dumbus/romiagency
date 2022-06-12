@@ -29,9 +29,14 @@ img {
   pointer-events:none
 }
 
+.hidden {
+  display: none;
+}
+
 @import "./blocks/header.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/services.scss";
 @import "./blocks/marketing.scss";
 @import "./blocks/profits.scss";
 @import "./blocks/proposal.scss";
+@import "./blocks/modal.scss";

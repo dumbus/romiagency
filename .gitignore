@@ -1,7 +1,4 @@
-package-lock.json
-package.json
-webpack.config.js
-\src
+\dist
 \node_modules
 
 # Logs

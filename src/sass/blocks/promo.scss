@@ -10,10 +10,12 @@
     z-index: 2000;
   }
   &-text {
+    position: relative;
     width: 50%;
     max-width: 1240px;
     padding: 300px 0 0 0;
     color: #FFF;
+    z-index: 3000;
     &-header {
       font-size: 50px;
     }

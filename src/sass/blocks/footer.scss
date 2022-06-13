@@ -1,0 +1,30 @@
+.footer {
+  padding: 60px 0 0 0;
+  background-color: $blue-dark;
+  color: #FFF;
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-descr {
+    &-name {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 25px;
+    }
+    &-img {
+      height: 40%;
+    }
+  }
+  &-table {
+    &-header {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-item {
+      margin-top: 25px;
+    }
+  }
+}

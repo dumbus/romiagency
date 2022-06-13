@@ -35,16 +35,6 @@ img {
 
 .main {
   position: relative;
-  &-sending::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 5000;
-  }
 }
 
 .hidden {
@@ -58,4 +48,3 @@ img {
 @import "./blocks/profits.scss";
 @import "./blocks/proposal.scss";
 @import "./blocks/modal.scss";
-@import "./blocks/loader.scss";

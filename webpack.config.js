@@ -43,8 +43,12 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/assets')
         },
         {
-          from: path.resolve(__dirname, 'src/mailer'),
-          to: path.resolve(__dirname, 'dist/mailer')
+          from: path.resolve(__dirname, 'src/PHPMailer'),
+          to: path.resolve(__dirname, 'dist/PHPMailer')
+        },
+        {
+          from: path.resolve(__dirname, 'src/sendmail.php'),
+          to: path.resolve(__dirname, 'dist/sendmail.php')
         }
       ]
     }),

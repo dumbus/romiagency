@@ -4,6 +4,7 @@ export const openModal = async () => {
   const modalBlock = document.querySelector('.modal');
   const homeBtn = document.querySelector('.header-button');
   const header = document.querySelector('.header');
+  const modalStatus = document.querySelector('.modal-status');
 
   modalOpenBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -17,6 +18,7 @@ export const openModal = async () => {
     modalBlock.classList.add('hidden');
     mainHomeBlock.classList.remove('hidden');
     header.classList.remove('header-dark');
+    modalStatus.remove('modal-status-visible');
   });
 };
 

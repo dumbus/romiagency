@@ -283,34 +283,34 @@
     
           <div class="modal-line"></div>
     
-          <form class="modal-form" action="sendmail.php" method="POST">
+          <form class="modal-form" action="mailer/sendmail.php" method="POST">
             <div class="modal-form-row">
               <h4>What services are you interested in?</h4>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Google Ads">
+                  <input class="service-checkbox" name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Google Ads">
                   <span>Google Ads</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Facebook Ads">
+                  <input class="service-checkbox" name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Facebook Ads">
                   <span>Facebook Ads</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Technical SEO">
+                  <input class="service-checkbox" name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Technical SEO">
                   <span>Technical SEO</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Analytics">
+                  <input class="service-checkbox" name="whichServiceAreYouInterestedIn[]" type="checkbox" value="Analytics">
                   <span>Analytics</span>
                 </label>
               </div>
@@ -321,28 +321,28 @@
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whatIsYourGoal[]" type="checkbox" value="More leads">
+                  <input class="goal-checkbox" name="whatIsYourGoal[]" type="checkbox" value="More leads">
                   <span>More leads</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whatIsYourGoal[]" type="checkbox" value="More sales">
+                  <input class="goal-checkbox" name="whatIsYourGoal[]" type="checkbox" value="More sales">
                   <span>More sales</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whatIsYourGoal[]" type="checkbox" value="Lower cost per conversion">
+                  <input class="goal-checkbox" name="whatIsYourGoal[]" type="checkbox" value="Lower cost per conversion">
                   <span>Lower cost per conversion</span>
                 </label>
               </div>
     
               <div class="modal-form-row-checkbox">
                 <label>
-                  <input name="whatIsYourGoal[]" type="checkbox" value="Brand awareness">
+                  <input class="goal-checkbox" name="whatIsYourGoal[]" type="checkbox" value="Brand awareness">
                   <span>Brand awareness</span>
                 </label>
               </div>
@@ -351,19 +351,19 @@
             <div class="modal-form-row">
               <h4>* Your Email address:</h4>
     
-              <input class="text-input" name="email" type="email" placeholder="Enter your Email address" required>
+              <input id="email" class="text-input" name="email" type="email" placeholder="Enter your Email address" required>
             </div>
     
             <div class="modal-form-row">
               <h4>* Your phone number:</h4>
     
-              <input class="text-input" name="phone" type="text" placeholder="Enter your phone number">
+              <input id="phone" class="text-input" name="phone" type="text" placeholder="Enter your phone number">
             </div>
     
             <div class="modal-form-row">
               <h4>Please write us any additional comments or notes:</h4>
     
-              <textarea class="textarea" name="comment" placeholder="Enter your message"></textarea>
+              <textarea id="comment" class="textarea" name="comment" placeholder="Enter your message"></textarea>
             </div>
     
             <div class="modal-form-row">
@@ -379,6 +379,8 @@
             <div class="modal-form-row">
               <button class="submit" type="submit" disabled>Submit Answers</button>
             </div>
+
+            <div class="modal-status">Your mail was successfully sent!</div>
           </form>
         </div>
       </div>

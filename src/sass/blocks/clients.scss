@@ -1,0 +1,21 @@
+.clients {
+  padding: 80px 0 0 0;
+  &-header {
+    font-size: 50px;
+    text-align: center;
+    color: $blue-dark;
+  }
+  .swiper {
+    margin-top: 60px;
+    width: 100%;
+    &-slide {
+      height: 240px;
+      width: 30%;
+      cursor: pointer;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

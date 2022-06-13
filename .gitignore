@@ -1,6 +1,6 @@
 \dist
 \node_modules
-\src\PHPMailer
+**/PHPMailer/
 sendmail.php
 
 # Logs

@@ -1,10 +1,10 @@
 .footer {
-  padding: 60px 0 0 0;
   background-color: $blue-dark;
   color: #FFF;
   .wrapper {
     display: flex;
     justify-content: space-around;
+    padding: 60px 0 20px 0;
   }
   &-descr {
     &-name {
@@ -24,7 +24,15 @@
       font-weight: 700;
     }
     &-item {
-      margin-top: 25px;
+      margin-top: 15px;
+      &-phone {
+        color: #FFF;
+        text-decoration: none;
+        transition: color 0.2s;
+        &:hover {
+          color: #009eee;
+        }
+      }
     }
   }
 }

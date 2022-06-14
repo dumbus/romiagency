@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
   <link rel="stylesheet" href="./style.css">
   <title>Romi Agency</title>
 </head>
@@ -15,7 +19,11 @@
     <header class="header">
       <div class="wrapper">
         <div class="header-button">
-          <img class="header-link-img" src="./assets/icons/logo.png" alt="romiagency-logo">
+          <img class="header-button-img" src="./assets/icons/logo.png" alt="romiagency-logo">
+        </div>
+        <div class="header-phone">
+          <img class="header-phone-img" src="./assets/icons/phone.png" alt="phone">
+          <a href="tel:+79622575575" class="header-phone-link">+7 (962) 257-55-75</a>
         </div>
       </div>
     </header>
@@ -274,7 +282,7 @@
         </section>
       </div>
 
-      <div class="modal hidden">
+      <section class="modal hidden">
         <div class="wrapper">
           <h2 class="modal-header">Get your FREE proposal</h2>
           <h3 class="modal-subheader">
@@ -283,7 +291,7 @@
     
           <div class="modal-line"></div>
     
-          <form class="modal-form" action="mailer/sendmail.php" method="POST">
+          <form class="modal-form">
             <div class="modal-form-row">
               <h4>What services are you interested in?</h4>
     
@@ -383,7 +391,7 @@
             <div class="modal-status">Your mail was successfully sent!</div>
           </form>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -391,7 +399,10 @@
         <div class="footer-descr">
           <img class="footer-descr-img" src="./assets/icons/logo.png" alt="romiagency-logo">
           <p class="footer-descr-name">PLASTIMA LLC.</p>
-          <p>We help you increase profit with performance driven marketing.</p>
+          <p class="footer-descr-slogan">
+            We help you increase profit <br>
+            with performance driven marketing.
+          </p>
         </div>
 
         <div class="footer-table">
@@ -409,6 +420,13 @@
           </div>
           <div class="footer-table-item">
             Primary State Registration Number (OGRN): 1113926010813
+          </div>
+          <div class="footer-table-item">
+            <b>Our phone number:</b>
+            <a href="tel:+79622575575" class="footer-table-item-phone">+7 (962) 257-55-75</a>
+          </div>
+          <div class="footer-table-item">
+            <div class="footer-table-item-email"><b>Our e-mail:</b> romiagency@yandex.ru</div>
           </div>
         </div>
       </div>

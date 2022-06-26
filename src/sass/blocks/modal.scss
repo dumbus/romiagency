@@ -129,4 +129,15 @@
       visibility: visible;
     }
   }
+  &-close {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      color: $blue-light;
+    }
+  }
 }

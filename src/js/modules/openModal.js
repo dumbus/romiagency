@@ -9,6 +9,7 @@ export const openModal = async () => {
   const homeBtn = document.querySelector('.header-button');
   const header = document.querySelector('.header');
   const modalStatus = document.querySelector('.modal-status');
+  const modalClose = document.querySelector('.modal-close');
 
   let swiper = new Swiper('.swiper', {
     loop: true,
@@ -29,6 +30,23 @@ export const openModal = async () => {
   });
 
   homeBtn.addEventListener('click', () => {
+    modalBlock.classList.add('hidden');
+    mainHomeBlock.classList.remove('hidden');
+    header.classList.remove('header-dark');
+    modalStatus.remove('modal-status-visible');
+
+    swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 80,
+      slidesPerView: 3,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1500
+      }
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
     modalBlock.classList.add('hidden');
     mainHomeBlock.classList.remove('hidden');
     header.classList.remove('header-dark');

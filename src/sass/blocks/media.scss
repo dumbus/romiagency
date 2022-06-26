@@ -1,0 +1,349 @@
+@media (max-width: 1440px) {
+  .wrapper {
+    width: 960px;
+  }
+  .promo {
+    overflow: hidden;
+    &-img {
+      width: 60%;
+    }
+    &-text {
+      padding: 200px 0 0 0;
+    }
+  }
+  .services {
+    &-wrapper {
+      padding: 40px;
+      width: calc(100% - 200px);
+    }
+  }
+  .clients {
+    .swiper {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    width: 720px;
+  }
+  .header {
+    height: 70px;
+    border-radius: 0 0 0 110px;
+  }
+  .promo {
+    height: 700px;
+    overflow: hidden;
+    &-img {
+      width: 100%;
+      top: 60px;
+      opacity: 0.6;
+    }
+    &-text {
+      width: 100%;
+      padding: 280px 0 0 0;
+      &-header {
+        font-size: 36px;
+      }
+    }
+  }
+  .services {
+    &-wrapper {
+      padding: 30px;
+      width: calc(100% - 120px);
+    }
+    &-table {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+      &-item {
+        width: 50%;
+      }
+    }
+  }
+  .marketing {
+    padding: 80px 0 80px 0;
+    &-header {
+      font-size: 36px;
+    }
+    &-quote {
+      padding: 50px;
+      font-size: 18px;
+      margin-top: 60px;
+    }
+    &-table {
+      margin-top: 100px;
+    }
+  }
+  .cases {
+    padding: 80px 0;
+    border-radius: 0 110px 0 0;
+    &-header {
+      font-size: 36px;
+    }
+    &-table {
+      column-gap: 30px;
+    }
+  }
+  .profits {
+    &-header {
+      font-size: 36px;
+    }
+  }
+  .clients {
+    &-header {
+      font-size: 36px;
+    }
+    .swiper {
+      width: 80%;
+    }
+  }
+  .proposal {
+    &-header {
+      font-size: 36px;
+    }
+  }
+  .footer {
+    &-descr-name {
+      font-size: 20px;
+    }
+    &-table {
+      &-header {
+        font-size: 20px;
+      }
+      &-item {
+        font-size: 14px;
+      }
+    }
+  }
+  .modal {
+    .wrapper {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 520px;
+  }
+  .services {
+    .wrapper {
+      width: calc(100% - 120px);
+    }
+    &-table {
+      &-item {
+        width: 70%;
+      }
+    }
+  }
+  .marketing {
+    &-table {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  .cases {
+    &-table {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+      &-img {
+        width: 80%;
+      }
+    }
+  }
+  .profits {
+    margin-top: 60px;
+    &-table {
+      grid-template-columns: 1fr 1fr;
+      &-item {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+  .clients {
+    padding-top: 60px;
+    .swiper {
+      width: 95%;
+    }
+  }
+  .proposal {
+    padding: 60px 0;
+  }
+  .footer {
+    .wrapper {
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 20px 0;
+    }
+    &-descr {
+      &-img {
+        display: none;
+      }
+      &-slogan {
+        font-size: 14px;
+      }
+    }
+  }
+  .modal {
+    .wrapper {
+      width: 85%;
+      padding: 30px 20px;
+      border-radius: 20px;
+    }
+    &-header {
+      font-size: 24px;  
+    }
+    &-subheader {
+      font-size: 18px;
+    }
+    &-form-row {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .wrapper {
+    width: 280px;
+  }
+  .header {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+    &-button {
+      height: 70px;
+    }
+    &-phone {
+      &-img {
+        height: 30px;
+      }
+    }
+  }
+  .promo {
+    &-text {
+      padding: 240px 0 0 0;
+      margin: 0 auto;
+      &-header {
+        font-size: 24px;
+      }
+      &-subheader {
+        font-size: 20px;
+      }
+      &-button {
+        padding: 20px 25px;
+      }
+    }
+  }
+  .services {
+    .wrapper {
+      width: calc(100% - 60px);
+      padding: 20px;
+    }
+    &-header {
+      font-size: 20px;
+    }
+  }
+  .marketing {
+    padding-top: 40px;
+    &-header {
+      font-size: 20px;
+    }
+    &-subheader {
+      font-size: 16px;
+    }
+    &-quote {
+      margin-top: 40px;
+      padding: 30px;
+      &-line {
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+    &-table {
+      margin-top: 40px;
+      &-item {
+        &-text {
+          font-size: 14px;
+        }
+        &-icon {
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .cases {
+    padding: 40px 0;
+    border-radius: 0 70px 0 0;
+    &-header {
+      font-size: 20px;
+    }
+  }
+  .profits {
+    &-header {
+      font-size: 20px;
+    }
+    &-table {
+      text-align: center;
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+    }
+  }
+  .clients {
+    .swiper {
+      margin-top: 20px;
+      width: 80%;
+      &-slide {
+        height: 120px;
+      }
+    }
+    &-header {
+      font-size: 20px;
+    }
+  }
+  .proposal {
+    &-header {
+      font-size: 20px;
+    }
+    &-subheader {
+      font-size: 16px;
+    }
+    &-button {
+      padding: 20px 25px;
+    }
+  }
+  .modal {
+    .wrapper {
+      padding-top: 80px;
+    }
+    &-header {
+      font-size: 20px;  
+    }
+    &-subheader {
+      font-size: 16px;
+    }
+    &-form-row {
+      font-size: 16px;
+      .text-input {
+        font-size: 16px;
+      }
+      .textarea {
+        font-size: 16px;
+      }
+    }
+    &-close {
+      left: 50%;
+    }
+  }
+}

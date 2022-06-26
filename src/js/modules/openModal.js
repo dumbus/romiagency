@@ -13,11 +13,23 @@ export const openModal = async () => {
 
   let swiper = new Swiper('.swiper', {
     loop: true,
-    spaceBetween: 80,
-    slidesPerView: 3,
     allowTouchMove: false,
     autoplay: {
       delay: 1500
+    },
+    breakpoints: {
+      1024: {
+        spaceBetween: 80,
+        slidesPerView: 3
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 80
+      },
+      568: {
+        slidesPerView: 2,
+        spaceBetween: 80
+      }
     }
   });
 
@@ -34,6 +46,8 @@ export const openModal = async () => {
     mainHomeBlock.classList.remove('hidden');
     header.classList.remove('header-dark');
     modalStatus.remove('modal-status-visible');
+
+    swiper.destroy();
 
     swiper = new Swiper('.swiper', {
       loop: true,
@@ -52,13 +66,25 @@ export const openModal = async () => {
     header.classList.remove('header-dark');
     modalStatus.remove('modal-status-visible');
 
-    swiper = new Swiper('.swiper', {
+    let swiper = new Swiper('.swiper', {
       loop: true,
-      spaceBetween: 80,
-      slidesPerView: 3,
       allowTouchMove: false,
       autoplay: {
         delay: 1500
+      },
+      breakpoints: {
+        1024: {
+          spaceBetween: 80,
+          slidesPerView: 3
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 80
+        },
+        568: {
+          slidesPerView: 2,
+          spaceBetween: 80
+        }
       }
     });
   });
